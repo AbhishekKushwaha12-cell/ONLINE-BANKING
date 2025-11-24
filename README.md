@@ -27,7 +27,7 @@ BankingSystemProject/
 - Money Transfer Between Accounts
 - Balance Inquiry
 - Robust Security Measures
-
+- 
 # 🌐 Technologies Used
 - Java
 - JDBC (Java Database Connectivity)

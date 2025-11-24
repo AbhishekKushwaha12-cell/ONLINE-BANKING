@@ -6,22 +6,22 @@ Welcome to the Banking System project! This Java-based application allows you to
 
 Follow these steps to set up and run the project on your local machine:
 
-1. **Clone the Repository**: 
-   ```shell
-   git clone https://github.com/YourUsername/YourBankingSystemRepo.git
-2. **Compile the Java Code**:
-
-   ```shell
-   javac *.java
-3. **Run the Application**:
-
-   ```shell
-   java BankingApp
-
-# 📂 Project Structure
-- 'src/': Contains the Java source code files.
-- 'database/': Includes SQL scripts for database setup.
-- 'screenshots/': Screenshots of the application in action.
+📂 Project Structure
+BankingSystemProject/
+├── src/
+│   └── BankingManagementSystem/
+│       ├── BankingApp.java             <-- Main executable class (UI + Menu)
+│       ├── Accounts.java               <-- Model class (Account data), extends DBConnector
+│       ├── User.java                   <-- Model class (User data), extends DBConnector
+│       ├── AccountManager.java         <-- Business logic class
+│       │                                  - Extends DBConnector
+│       │                                  - Implements TransactionInterface (Polymorphism)
+│       ├── DBConnector.java            <-- Abstract Class (JDBC connection handling)
+│       ├── TransactionInterface.java   <-- Interface (deposit/withdraw/transfer)
+│       └── TransactionWorker.java      <-- Runnable Class (Multithreading)
+├── lib/
+│   └── mysql-connector-java-*.jar      <-- JDBC Driver (MySQL Connector)
+└── README.md
 
 # 📦 Features
 - User Registration & Login
